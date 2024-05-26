@@ -3,3 +3,11 @@
     padding-bottom: 5px;
     text-align: center;
 }
+
+.medio {
+    text-align: center;
+}
+
+.mat-mdc-card-header {
+    display: block;
+}
