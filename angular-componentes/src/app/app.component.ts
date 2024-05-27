@@ -6,6 +6,7 @@ import { Widget3Component } from "./widget3/widget3.component";
 import { Widget4Component } from "./widget4/widget4.component";
 
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
