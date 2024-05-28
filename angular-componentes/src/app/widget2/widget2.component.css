@@ -11,3 +11,17 @@
 .mat-mdc-card-header {
     display: block;
 }
+
+.reloj {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.tiempo {
+    background-color: black;
+    padding: 30px;
+    margin: 10px;
+    justify-content: 5px;
+    border-radius: 5px;
+}
