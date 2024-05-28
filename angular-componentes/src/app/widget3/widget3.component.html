@@ -3,7 +3,17 @@
         <mat-card-title class="medio">Widget 3</mat-card-title>
     </mat-card-header>
     <mat-card-content class="centro">
-        <p>Descripción del Widget 3</p>
+        <div>
+            <mat-selection-list #comidas>
+                @for (comida of tiposDeComidas; track comida) {
+                <mat-list-option>{{comida}}</mat-list-option>
+                }
+            </mat-selection-list>
+
+            <p>
+                Comidas Realizadas: {{comidas.selectedOptions.selected.length}}
+            </p>
+        </div>
 
         <button mat-stroked-button (click)="openWidgetGuardado()">
             Añadir Widget

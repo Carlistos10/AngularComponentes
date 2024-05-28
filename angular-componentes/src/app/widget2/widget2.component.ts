@@ -24,12 +24,12 @@ export class Widget2Component implements OnInit {
   hour!: string;
 
   constructor(private _widgetBar: MatSnackBar) {
-    this.firstTime = moment().format('HH: mm: ss');
+    this.firstTime = moment().format('HH : mm : ss');
   }
 
   ngOnInit(): void {
     setInterval(() => {
-      this.hour = moment().format('HH: mm: ss');
+      this.hour = moment().format('HH : mm : ss');
     }, 1000);
   }
 
