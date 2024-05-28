@@ -6,11 +6,14 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+
 
 @Component({
   selector: 'app-widget1',
   standalone: true,
-  imports: [MatCardModule, MatFormFieldModule, FormsModule, MatInputModule, MatButtonModule],
+  imports: [MatCardModule, MatFormFieldModule, FormsModule, MatInputModule, MatButtonModule, MatDatepickerModule, MatNativeDateModule],
   templateUrl: './widget1.component.html',
   styleUrl: './widget1.component.css'
 })
