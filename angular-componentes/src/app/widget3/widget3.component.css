@@ -11,3 +11,7 @@
 .mat-mdc-card-header {
     display: block;
 }
+
+.izq {
+    text-align: start;
+}

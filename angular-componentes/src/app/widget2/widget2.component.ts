@@ -5,6 +5,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import moment from 'moment';
 
@@ -34,9 +35,14 @@ export class Widget2Component implements OnInit {
   }
 
   openWidgetGuardado() {
-    this._widgetBar.openFromComponent(WidgetAnadido, {
-      duration: this.durationInSeconds * 1000,
+    this._widgetBar.openFromComponent(CargaGuardado, {
+      duration: this.durationInSeconds * 1500,
     });
+    setTimeout(() => {
+      this._widgetBar.openFromComponent(WidgetAnadido, {
+        duration: this.durationInSeconds * 1000,
+      });
+    }, 1000);
   }
 }
 
@@ -46,3 +52,12 @@ export class Widget2Component implements OnInit {
   standalone: true,
 })
 export class WidgetAnadido { }
+
+@Component({
+  selector: 'progress-spinner-overview-example',
+  templateUrl: '../cargaWidget.html',
+  styleUrls: ['./widget2.component.css'],
+  standalone: true,
+  imports: [MatProgressSpinnerModule],
+})
+export class CargaGuardado { }

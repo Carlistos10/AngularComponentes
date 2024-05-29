@@ -6,31 +6,37 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatMenuModule } from '@angular/material/menu';
-import { MatIcon } from '@angular/material/icon';
-import { MatList, MatListOption } from '@angular/material/list';
-import { MatListItem } from '@angular/material/list';
-import { MatSelectionList } from '@angular/material/list';
-
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @Component({
   selector: 'app-widget3',
   standalone: true,
-  imports: [MatCardModule, MatFormFieldModule, FormsModule, MatInputModule, MatButtonModule, MatMenuModule, MatIcon, MatList, MatListItem, MatSelectionList, MatListOption],
+  imports: [
+    MatCardModule, MatFormFieldModule, FormsModule, MatInputModule,
+    MatButtonModule, MatMenuModule, MatIconModule, MatListModule, MatProgressSpinnerModule
+  ],
   templateUrl: './widget3.component.html',
-  styleUrl: './widget3.component.css'
+  styleUrls: ['./widget3.component.css']
 })
 export class Widget3Component {
 
   tiposDeComidas: string[] = ['Desayuno', 'Media Mañana', 'Comida', 'Merienda', 'Cena'];
-
   durationInSeconds = 2;
+  loading: boolean = false;
 
   constructor(private _widgetBar: MatSnackBar) { }
 
   openWidgetGuardado() {
-    this._widgetBar.openFromComponent(WidgetAnadido, {
-      duration: this.durationInSeconds * 1000,
+    this._widgetBar.openFromComponent(CargaGuardado, {
+      duration: this.durationInSeconds * 1500,
     });
+    setTimeout(() => {
+      this._widgetBar.openFromComponent(WidgetAnadido, {
+        duration: this.durationInSeconds * 1000,
+      });
+    }, 1000);
   }
 }
 
@@ -40,3 +46,12 @@ export class Widget3Component {
   standalone: true,
 })
 export class WidgetAnadido { }
+
+@Component({
+  selector: 'progress-spinner-overview-example',
+  templateUrl: '../cargaWidget.html',
+  styleUrls: ['./widget3.component.css'],
+  standalone: true,
+  imports: [MatProgressSpinnerModule],
+})
+export class CargaGuardado { }
