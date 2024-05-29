@@ -4,15 +4,12 @@
     </mat-card-header>
     <mat-card-content class="centro">
         <div class="izq">
-            <mat-selection-list #comidas>
-                @for (comida of tiposDeComidas; track comida) {
-                <mat-list-option>{{comida}}</mat-list-option>
+            <mat-selection-list #acciones>
+                @for (accion of rutina; track accion) {
+                <mat-list-option>{{accion}}</mat-list-option>
                 }
             </mat-selection-list>
 
-            <p>
-                Comidas Realizadas: {{comidas.selectedOptions.selected.length}}
-            </p>
         </div>
 
         <button mat-stroked-button (click)="openWidgetGuardado()">

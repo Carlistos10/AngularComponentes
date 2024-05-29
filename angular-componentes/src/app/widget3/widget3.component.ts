@@ -22,7 +22,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 })
 export class Widget3Component {
 
-  tiposDeComidas: string[] = ['Desayuno', 'Media Mañana', 'Comida', 'Merienda', 'Cena'];
+  rutina: string[] = ['Lavarse la cara', 'Desayuno', 'Lavarse los dientes', 'Vestirse', 'Coger Mochila', 'Cerrar la puerta'];
   durationInSeconds = 2;
   loading: boolean = false;
 
