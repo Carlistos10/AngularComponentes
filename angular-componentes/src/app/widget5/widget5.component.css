@@ -11,20 +11,3 @@
 .mat-mdc-card-header {
     display: block;
 }
-
-.der {
-    float: inline-end;
-}
-
-.izq {
-    float: inline-start;
-}
-
-.ancho {
-    width: 400px;
-}
-
-mat-slider {
-    margin-top: -10px;
-    width: 300px;
-}

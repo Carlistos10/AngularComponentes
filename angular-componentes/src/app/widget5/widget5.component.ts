@@ -7,17 +7,16 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
-import { MatSliderModule } from '@angular/material/slider';
 
 
 @Component({
-  selector: 'app-widget4',
+  selector: 'app-widget5',
   standalone: true,
-  imports: [MatCardModule, MatFormFieldModule, FormsModule, MatInputModule, MatButtonModule, MatSliderModule],
-  templateUrl: './widget4.component.html',
-  styleUrl: './widget4.component.css'
+  imports: [MatCardModule, MatFormFieldModule, FormsModule, MatInputModule, MatButtonModule],
+  templateUrl: './widget5.component.html',
+  styleUrl: './widget5.component.css'
 })
-export class Widget4Component {
+export class Widget5Component {
   durationInSeconds = 2;
 
   constructor(private _widgetBar: MatSnackBar) { }
@@ -44,7 +43,7 @@ export class WidgetAnadido { }
 @Component({
   selector: 'progress-spinner-overview-example',
   templateUrl: '../cargaWidget.html',
-  styleUrls: ['./widget4.component.css'],
+  styleUrls: ['./widget5.component.css'],
   standalone: true,
   imports: [MatProgressSpinnerModule],
 })
