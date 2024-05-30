@@ -3,11 +3,13 @@
         <mat-card-title class="medio">Widget 5</mat-card-title>
     </mat-card-header>
     <mat-card-content class="centro">
-        <p>Widget 5</p>
-
-
+        <div class="cronometro">
+            <p class="tiempo reloj">{{ formatTime(time) }}</p>
+            <button class="esp" mat-stroked-button (click)="startTimer()">Iniciar</button>
+            <button class="esp" mat-stroked-button (click)="stopTimer()">Detener</button>
+            <button class="esp" mat-stroked-button (click)="resetTimer()">Reiniciar</button>
+        </div>
         <button mat-stroked-button (click)="openWidgetGuardado()">
-
             Añadir Widget
         </button>
     </mat-card-content>

@@ -11,3 +11,25 @@
 .mat-mdc-card-header {
     display: block;
 }
+
+.reloj {
+    font-size: 48px;
+    font-weight: bold;
+    color: #00eeff;
+}
+
+.tiempo {
+    background-color: black;
+    padding: 30px;
+    margin: 10px;
+    justify-content: 5px;
+    border-radius: 5px;
+}
+
+.cronometro {
+    padding-bottom: 15px;
+}
+
+.esp {
+    margin: 10px;
+}
