@@ -1,3 +1,20 @@
 .esp {
     margin: 20px;
 }
+
+.centro {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.medio {
+    text-align: center;
+}
+
+.mat-mdc-card-header {
+    display: block;
+}
+
+.but {
+    text-align: center;
+}

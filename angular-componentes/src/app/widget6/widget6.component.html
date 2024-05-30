@@ -1,6 +1,7 @@
 <mat-card>
     <mat-card-header>
-        <mat-card-title class="medio">Widget 6</mat-card-title>
+        <mat-card-title class="medio">Calendario 🗓️</mat-card-title>
+        <hr>
     </mat-card-header>
     <mat-card-content class="centro">
         <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
@@ -38,6 +39,6 @@
             <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
         </table>
 
-        <button mat-stroked-button (click)="openWidgetGuardado()"> Añadir Widget </button>
+        <button mat-stroked-button (click)="openWidgetGuardado()"> Añadir Widget 💾</button>
     </mat-card-content>
 </mat-card>

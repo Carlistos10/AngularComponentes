@@ -14,10 +14,12 @@
 
 .der {
     float: inline-end;
+    font-size: 30px;
 }
 
 .izq {
     float: inline-start;
+    font-size: 30px;
 }
 
 .ancho {
