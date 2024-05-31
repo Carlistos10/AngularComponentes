@@ -9,9 +9,6 @@ import { Widget6Component } from "./widget6/widget6.component";
 import { Widget7Component } from './widget7/widget7.component';
 import { Widget8Component } from './widget8/widget8.component';
 
-
-
-
 @Component({
   selector: 'app-root',
   standalone: true,
