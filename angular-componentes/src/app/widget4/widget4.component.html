@@ -1,3 +1,4 @@
+<!-- Para poder crear las tarjetas usamos el componente mat-card, con su respectivo header para el título y el content para el widget -->
 <mat-card>
     <mat-card-header>
         <mat-card-title class="medio">¿Cómo te encuentras hoy 💆?</mat-card-title>
@@ -9,12 +10,15 @@
             <p class="izq">😞</p>
             <p class="der">😁</p>
             <div>
+
+                <!-- Aqui indicamos el componente del slider con el valor que debe indicar de manera predeterminada -->
                 <mat-slider>
                     <input value="50" matSliderThumb>
                 </mat-slider>
             </div>
         </div>
 
+        <!-- Por último, añadimos un botón para realizar la función de guardado -->
         <button mat-stroked-button (click)="openWidgetGuardado()">
             Añadir Widget 💾
         </button>

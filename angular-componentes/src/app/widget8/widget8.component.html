@@ -1,14 +1,19 @@
+<!-- Para poder crear las tarjetas usamos el componente mat-card, con su respectivo header para el título y el content para el widget -->
 <mat-card>
     <mat-card-header>
         <mat-card-title class="medio">Ubicación 📌</mat-card-title>
     </mat-card-header>
     <mat-card-content class="centro">
+
+        <!-- Aqi comrpobamos si las funciones de html funcionan de manera correcta sin tener que añadir nada en el TypeScript -->
         <div class="izq esp">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1531.0743756497639!2d-4.0245452138461495!3d39.870905818787094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6a0a53483a57e7%3A0xc7f7d4815179b44b!2sIES%20Azarquiel!5e0!3m2!1ses!2ses!4v1698655854360!5m2!1ses!2ses"
                 width="500" height="400" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+
+        <!-- Por último, añadimos un botón para realizar la función de guardado -->
         <button mat-stroked-button (click)="openWidgetGuardado()">
             Añadir Widget 💾
         </button>

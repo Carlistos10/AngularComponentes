@@ -1,9 +1,12 @@
+<!-- Para poder crear las tarjetas usamos el componente mat-card, con su respectivo header para el título y el content para el widget -->
 <mat-card>
     <mat-card-header>
         <mat-card-title class="medio">Centro de Control 💻</mat-card-title>
         <hr>
     </mat-card-header>
     <mat-card-content>
+
+        <!-- Aqui insertamos gracias al mat-slide-toggle el centro de control con sliders -->
         <div class="izq esp">
             <p><mat-slide-toggle>WiFi 🛜</mat-slide-toggle></p>
             <p><mat-slide-toggle>Datos Móviles 📶</mat-slide-toggle></p>
@@ -11,6 +14,7 @@
             <p><mat-slide-toggle color="warn">Ahorro de batería 🪫</mat-slide-toggle></p>
         </div>
 
+        <!-- Por último, añadimos un botón para realizar la función de guardado -->
         <div class="but">
             <button mat-stroked-button (click)="openWidgetGuardado()">
                 Añadir Widget 💾

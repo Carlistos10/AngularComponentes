@@ -1,13 +1,15 @@
+<!-- Para poder crear las tarjetas usamos el componente mat-card, con su respectivo header para el título y el content para el widget -->
 <mat-card>
     <mat-card-header>
         <mat-card-title class="medio">Calendario 🗓️</mat-card-title>
         <hr>
     </mat-card-header>
     <mat-card-content class="centro">
+        <!-- Para inyectar el calendario, procedemos a usar el componente mat-calendar -->
         <section style="width: 300px;">
             <mat-calendar></mat-calendar>
         </section>
-
+        <!-- Por último, añadimos un botón para realizar la función de guardado -->
         <button mat-stroked-button (click)="openWidgetGuardado()">
             Añadir Widget 💾
         </button>

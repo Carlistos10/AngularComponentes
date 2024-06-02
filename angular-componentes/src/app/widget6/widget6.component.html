@@ -1,8 +1,10 @@
+<!-- Para poder crear las tarjetas usamos el componente mat-card, con su respectivo header para el título y el content para el widget -->
 <mat-card>
     <mat-card-header>
         <mat-card-title class="medio">Horario 📓</mat-card-title>
         <hr>
     </mat-card-header>
+    <!-- Para poder crear el horario es necesario crear una tabla con sus contenidos por columnas -->
     <mat-card-content class="centro">
         <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
             <ng-container matColumnDef="hora">
@@ -39,6 +41,7 @@
             <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
         </table>
 
+        <!-- Por último, añadimos un botón para realizar la función de guardado -->
         <button mat-stroked-button (click)="openWidgetGuardado()"> Añadir Widget 💾</button>
     </mat-card-content>
 </mat-card>
