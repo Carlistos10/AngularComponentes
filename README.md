@@ -17,13 +17,9 @@ Install dependencies
   npm install
 ```
 
-```bash
-  ng add @angular/material
-```
-
 Start the server
 
 ```bash
-  ng s
+  npm run start
 ```
 ## Proyecto realizado por Carlos Maranhas, alumno de S2DAW del IES Azarquiel - Toledo
