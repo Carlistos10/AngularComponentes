@@ -11,6 +11,12 @@ Las tecnologías utilizadas son Angular y su librería de componentes de Angular
 
 ## Run Locally
 
+Acces to the correct folder
+
+```bash
+  cd .\angular-componentes\
+```
+
 Install dependencies
 
 ```bash
